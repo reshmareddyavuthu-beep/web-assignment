@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>cake's bakery</title>
+        <style>
+            nav a {
+            color: white;
+            text-decoration: none;
+            margin: 15px;
+            font-size: 17px;
+        }
+
+        nav a:hover {
+            color: #ffd6df;
+        }
+
+        .welcome {
+            text-align: center;
+            padding: 40px 20px;
+            background-color: #ffe4e1;
+        }
+
+        .welcome h2 {
+            font-size: 32px;
+        }
+
+        .welcome p {
+            font-size: 18px;
+        }
+
+        .offer {
+            background-color: #fff0b3;
+            color: #713d22;
+            text-align: center;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 10px;
+        }
+
+        .products {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .card {
+            background-color: white;
+            width: 250px;
+            margin: 10px;
+            padding: 15px;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px #d9b8b8;
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .card h3 {
+            color: #a04455;
+        }
+
+        .price {
+            color: #267447;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .custom {
+            background-color: #fce1e7;
+            text-align: center;
+            padding: 30px 20px;
+        }
+
+        .contact {
+            text-align: center;
+            padding: 30px 20px;
+            background-color: #fff0e6;
+        }
+
+        footer {
+            background-color: #6b3038;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+        @media (max-width: 600px) {
+            nav a {
+                display: inline-block;
+                margin: 8px;
+            }
+
+            .card {
+                width: 85%;
+            }
+
+            header h1 {
+                font-size: 28px;
+            }
+
+            .welcome h2 {
+                font-size: 25px;
+            }
+        }
+        .head{
+            text-align: center;
+        }
+        </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="head">
+        <h1>🍰 Cake's Queen🍰</h1>
+        <p>Freshly Baked Happiness in Every Bite!</p>
+        </div>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#cakes">Cakes</a>
+        <a href="#pastries">Pastries</a>
+        <a href="#cookies">Cookies</a>
+        <a href="#custom">Custom Cakes</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section class="welcome" id="home">
+        <h2>Welcome to Sweet Treats!</h2>
+        <p>Discover delicious cakes, tasty pastries,
+        crunchy cookies and beautiful custom cakes.</p>
+        <p>Made with love, baked with happiness!</p>
+    </section>
+
+    <section class="offer">
+        <h2>🎉 Special Seasonal Offer 🎉</h2>
+        <p>Celebrate the festive season with delicious treats!</p>
+        <h3>Get 10% OFF on selected bakery items!</h3>
+        <p>Visit our store to explore the latest offers.</p>
+    </section>
+
+    <section class="products" id="cakes">
+        <h2>🎂 Our Delicious Cakes</h2>
+
+        <div class="gallery">
+
+            <div class="card">
+                <img
+                src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=600&q=80"
+                alt="Chocolate cake">
+
+                <h3>Chocolate Cake</h3>
+                <p>Rich chocolate cake with creamy frosting.</p>
+                <p class="price">₹550</p>
+            </div>
+
+            <div class="card">
+                <img
+                src="https://images.unsplash.com/photo-1586985289688-ca3cf47d3e6e?auto=format&fit=crop&w=600&q=80"
+                alt="Birthday cake">
+
+                <h3>Birthday Cake</h3>
+                <p>A delicious cake for your special day.</p>
+                <p class="price">₹700</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="products" id="pastries">
+        <h2>🧁 Fresh Pastries</h2>
+
+        <div class="gallery">
+
+            <div class="card">
+                <img
+                src="https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=600&q=80"
+                alt="Cream pastry">
+
+                <h3>Cream Pastry</h3>
+                <p>Soft pastry topped with delicious cream.</p>
+                <p class="price">₹80</p>
+            </div>
+
+            <div class="card">
+                <img
+                src="https://images.unsplash.com/photo-1551024506-0bccd828d307?auto=format&fit=crop&w=600&q=80"
+                alt="Sweet bakery treat">
+
+                <h3>Special Pastry</h3>
+                <p>A sweet treat for every occasion.</p>
+                <p class="price">₹100</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="products" id="cookies">
+        <h2>🍪 Crunchy Cookies</h2>
+
+        <div class="gallery">
+
+            <div class="card">
+                <img
+                src="https://images.unsplash.com/photo-1499636136210-6f4ee915583e?auto=format&fit=crop&w=600&q=80"
+                alt="Chocolate chip cookies">
+
+                <h3>Chocolate Cookies</h3>
+                <p>Crispy cookies filled with chocolate chips.</p>
+                <p class="price">₹150 / pack</p>
+            </div>
+
+            <div class="card">
+                <img
+                src="https://images.unsplash.com/photo-1558961363-fa8fdf82db35?auto=format&fit=crop&w=600&q=80"
+                alt="Fresh cookies">
+
+                <h3>Butter Cookies</h3>
+                <p>Freshly baked, buttery and crunchy cookies.</p>
+                <p class="price">₹120 / pack</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="custom" id="custom">
+        <h2>🎨 Custom Cake Designs</h2>
+
+        <p>Make your celebrations extra special!</p>
+
+        <div class="gallery">
+
+            <div class="card">
+                <img
+                src="https://images.unsplash.com/photo-1535254973040-607b474cb50d?auto=format&fit=crop&w=600&q=80"
+                alt="Decorated celebration cake">
+
+                <h3>Designer Cake</h3>
+                <p>Beautiful cakes for weddings and celebrations.</p>
+                <p class="price">Starting at ₹1,000</p>
+            </div>
+
+            <div class="card">
+                <img
+                src="https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?auto=format&fit=crop&w=600&q=80"
+                alt="Special occasion cake">
+
+                <h3>Birthday Special</h3>
+                <p>Choose your favourite colours and decorations.</p>
+                <p class="price">Starting at ₹800</p>
+            </div>
+
+        </div>
+
+        <p>Contact us to discuss your custom cake design!</p>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2>📞 Contact Us</h2>
+
+        <p><b>Bakery Name:</b>Cake's Queen</p>
+        <p><b>Address:</b> Main Road, Vijayawada, Andhra Pradesh</p>
+        <p><b>Phone:</b> 9391703607</p>
+        <p><b>Email:</b> cakesqueen@gmail.com</p>
+        <p><b>Opening Hours:</b> 9:00 AM - 9:00 PM</p>
+
+        <p>Visit us for fresh and delicious bakery products!</p>
+    </section>
+
+    <footer>
+        <p>© 2026 Cake's Queen Bakery</p>
+        <p>Made with ❤️ for cake lovers!</p>
+    </footer>
+
+</body>
+</html>

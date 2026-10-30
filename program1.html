@@ -1,0 +1,391 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Portfolio</title>
+    <style>* {
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f7ff;
+            color: #20243a;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #252b55;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav {
+            background-color: #353d70;
+            padding: 12px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            display: inline-block;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #5965a8;
+            border-radius: 5px;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 40px 20px;
+            background: linear-gradient(135deg, #e5eaff, #d9f7f1);
+            animation: fadeIn 1.5s;
+        }
+
+        .profile-circle {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-color: #353d70;
+            color: white;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+            font-weight: bold;
+            animation: float 3s infinite;
+        }
+
+        .hero h2 {
+            color: #252b55;
+            font-size: 30px;
+        }
+
+        .button {
+            display: inline-block;
+            background-color: #353d70;
+            color: white;
+            text-decoration: none;
+            padding: 10px 18px;
+            margin: 5px;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        .button:hover {
+            background-color: #5965a8;
+            transform: translateY(-3px);
+        }
+
+        section {
+            max-width: 1000px;
+            margin: auto;
+            padding: 35px 20px;
+        }
+
+        section h2 {
+            text-align: center;
+            color: #252b55;
+        }
+
+        .card {
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 15px;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+        }
+
+        .card h3 {
+            color: #353d70;
+            margin-top: 0;
+        }
+
+        .tag {
+            display: inline-block;
+            background-color: #e8edff;
+            color: #353d70;
+            padding: 4px 10px;
+            margin: 4px;
+            border-radius: 15px;
+            font-size: 13px;
+        }
+
+        .contact {
+            text-align: center;
+        }
+
+        .contact a {
+            color: #353d70;
+        }
+
+        footer {
+            background-color: #252b55;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+        /* Simple animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(15px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-6px);
+            }
+        }
+          /* Responsive layout for mobile screens */
+        @media (max-width: 650px) {
+            .cards {
+                grid-template-columns: 1fr;
+            }
+
+            nav {
+                position: static;
+            }
+
+            nav a {
+                padding: 7px;
+                font-size: 14px;
+            }
+
+            .hero h2 {
+                font-size: 25px;
+            }
+        }
+        </style>
+    </head>
+<body>
+    <header id="home">
+        <h1>Reshma Avuthu</h1>
+        <p>First-Year B.Tech Student</p>
+        <p>Dr. RVR NRIIT DTBU</p>
+    </header>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#hobbies">Hobbies</a>
+        <a href="#projects">Projects</a>
+        <a href="#achievements">Achievements</a>
+        <a href="#resume">Resume</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <div class="hero">
+        <div class="profile-circle">R</div>
+        <h2>Hello, I'm Reshma!</h2>
+        <p>
+            I am a first-year B.Tech student interested in coding
+            and learning Python. I enjoy learning new technologies
+            and improving my programming skills.
+        </p>
+        <a href="#projects" class="button">View My Projects</a>
+        <a href="#contact" class="button">Contact Me</a>
+    </div>
+    <section id="about">
+        <h2>About Me</h2>
+        <div class="card">
+            <p>
+                My name is Reshma Avuthu. I am studying B.Tech
+                first year at Dr. RVR NRIIT DTBU. I am interested
+                in coding and learning about computers.
+                I want to improve my skills by practising programs
+                and working on academic projects.
+            </p>
+        </div>
+    </section>
+    <section id="education">
+        <h2>Educational Qualifications</h2>
+        <div class="card">
+            <h3>Bachelor of Technology (B.Tech)</h3>
+            <p><strong>College:</strong> Dr. RVR NRIIT DTBU</p>
+            <p><strong>Year:</strong> First Year</p>
+            <p><strong>Status:</strong> Currently Studying</p>
+        </div>
+    </section>
+    <section id="skills">
+        <h2>Technical Skills</h2>
+        <div class="cards">
+            <div class="card">
+                <h3>Basic Coding</h3>
+                <p>
+                    I enjoy solving simple coding questions
+                    and learning programming concepts.
+                </p>
+                <span class="tag">Beginner</span>
+            </div>
+
+            <div class="card">
+                <h3>Python</h3>
+                <p>
+                    Learning Python basics, including variables,
+                    input, output, conditions and loops.
+                </p>
+                <span class="tag">Python Basics</span>
+            </div>
+
+            <div class="card">
+                <h3>Problem Solving</h3>
+                <p>
+                    Practising how to understand problems
+                    and find simple solutions.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Future Learning</h3>
+                <p>
+                    Improving my coding skills through
+                    regular practice and small projects.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section id="hobbies">
+        <h2>My Hobbies</h2>
+        <div class="cards">
+            <div class="card">
+                <h3>🎵 Listening to Music</h3>
+                <p>
+                    I enjoy listening to music during my free time.
+                    It helps me relax and feel refreshed.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>🏸 Playing Badminton</h3>
+                <p>
+                    I like playing badminton to stay active
+                    and enjoy time with friends.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section id="projects">
+        <h2>Academic Projects</h2>
+        <div class="cards">
+            <div class="card">
+                <h3>Project 1: Python Calculator</h3>
+                <p>
+                    A beginner Python program that performs
+                    addition, subtraction, multiplication
+                    and division.
+                </p>
+                <span class="tag">Python</span>
+                <span class="tag">Beginner</span>
+            </div>
+
+            <div class="card">
+                <h3>Project 2: Student Portfolio</h3>
+                <p>
+                    A simple website created using HTML and CSS
+                    to display student information, skills
+                    and hobbies.
+                </p>
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+            </div>
+        </div>
+        <p>
+            Note: Replace these sample projects with your
+            actual academic projects if they are different.
+        </p>
+    </section>
+    <section id="achievements">
+        <h2>Achievements and Goals</h2>
+        <div class="card">
+            <ul>
+                <li>Learning coding as a first-year student.</li>
+                <li>Practising Python programming basics.</li>
+                <li>Working towards completing academic projects.</li>
+                <li>Goal: participate in coding competitions.</li>
+            </ul>
+            <p>
+                Add your actual certificates, awards and
+                achievements here when available.
+            </p>
+        </div>
+    </section>
+    <section id="resume">
+        <h2>My Resume</h2>
+        <div class="card" style="text-align: center;">
+            <p>
+                This portfolio provides an overview of my
+                education, skills, hobbies and projects.
+            </p>
+            <p>
+                You can print this page or save it as a PDF.
+            </p>
+            <button class="button" onclick="window.print()">
+                Print / Save as PDF
+            </button>
+        </div>
+    </section>
+    <section id="contact">
+        <h2>Contact Information</h2>
+        <div class="card contact">
+            <p><strong>Name:</strong> Reshma Avuthu</p>
+
+            <p>
+                <strong>Email:</strong>
+                <a href="mailto:reshmareddyavuthu@gmail.com">
+                    reshmareddyavuthu@gmail.com
+                </a>
+            </p>
+
+            <p>
+                <strong>Phone:</strong>
+                <a href="tel:9515094972">9515094972</a>
+            </p>
+
+            <p><strong>College:</strong> Dr. RVR NRIIT DTBU</p>
+        </div>
+    </section>
+    <footer>
+        <p>© 2026 Reshnma Avuthu</p>
+        <p>Created using basic HTML and CSS.</p>
+    </footer>
+
+</body>
+</html>
